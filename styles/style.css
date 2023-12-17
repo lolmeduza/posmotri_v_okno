@@ -10,10 +10,11 @@ html {
 
 .page {
   inline-size: 1200px;
+  height: 800px;
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -35,4 +36,212 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+.title {
+  color: #ffffff;
+
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%; /* 70.5px */
+  text-transform: uppercase;
+}
+.content__accent {
+  color: #545050;
+}
+.content__video-card-title {
+  color: #fff;
+
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  color: #fff;
+
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px; /* 90% */
+}
+.search-form__fieldset-title {
+  color: #fff;
+
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.search-form__textfield {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.7);
+  width: 225px;
+  height: 27px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  appearance: none;
+}
+.search-form__submit-button {
+  color: #fff;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 1px solid #fff;
+  padding: 10px 65px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 194px;
+  height: 34px;
+}
+.search-form__fieldset {
+  color: #fff;
+
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.content__card-link {
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 133px 30px;
+  align-items: flex-end;
+  width: 1140px;
+  height: 534px;
+}
+
+.content__details {
+  display: flex;
+  height: 534px;
+  width: 399px;
+  gap: 26px;
+  flex-direction: column;
+}
+
+.content__list {
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 298px;
+  position: relative;
+  padding-right: 68px;
+  gap: 20px;
+}
+.content__list-item {
+  box-sizing: border-box;
+}
+.content__list::-webkit-scrollbar {
+  width: 0;
+}
+
+.result {
+  width: 711px;
+}
+.search-form {
+  display: flex;
+  gap: 5px;
+  height: 54px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.result__video-container {
+  height: 386px;
+  width: 711px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.result__video {
+  height: 100%;
+  width: 100%;
+}
+/* .content__list:not(:last-of-type) {
+
+  gap: 30px;
+} */
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+}
+.search-form__label-text {
+}
+.search-form__pseudo-checkbox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background-color: #feafe8;
+}
+.search-form__pseudo-checkbox:checked {
+  border: 20px solid #fff;
+}
+input[type="checkbox"] + search-form__pseudo-checkbox:checked {
+  border: 20px solid #fff;
+} /* выбранный */
+.search-form__pseudo-checkbox:focus-visible {
+} /* в фокусе */
+
+/* input[type="checkbox"] + span {} для чекбокса первый сосед с именем span */
+
+.search-form__label {
+  display: flex;
+
+  gap: 15px;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  width: 399px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
 }
