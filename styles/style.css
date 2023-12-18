@@ -80,7 +80,7 @@ ol {
   line-height: normal;
 }
 .search-form__textfield {
-  background-color: black;
+  background-color: #545050;
   color: rgba(255, 255, 255, 0.7);
   width: 225px;
   height: 27px;
@@ -91,6 +91,8 @@ ol {
   line-height: normal;
   cursor: pointer;
   appearance: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 .search-form__submit-button {
   color: #fff;
@@ -102,7 +104,7 @@ ol {
   line-height: normal;
   border: 1px solid #fff;
   padding: 10px 65px;
-  background-color: black;
+  background-color: #545050;
   color: white;
   cursor: pointer;
   width: 194px;
@@ -139,13 +141,13 @@ ol {
 }
 
 .content__list {
-  display: flex;
+  /* display: flex; */
   overflow-y: scroll;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   height: 298px;
   position: relative;
-  padding-right: 68px;
+
   gap: 20px;
 }
 .content__list-item {
@@ -182,6 +184,8 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .content__video-card-thumbnail {
   width: 194px;
@@ -243,5 +247,5 @@ input[type="checkbox"] + search-form__pseudo-checkbox:checked {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: black;
+  background-color: #545050;
 }
