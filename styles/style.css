@@ -52,7 +52,7 @@ ol {
   justify-content: center;
   gap: 30px;
   margin: 133px 30px;
-  align-items: flex-end;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 }
@@ -148,6 +148,7 @@ ol {
   width: 399px;
   gap: 26px;
   flex-direction: column;
+  margin-bottom: 75px;
 }
 
 .content__list {
