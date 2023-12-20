@@ -10,7 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
-  height: 800px;
+  height: 900px;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -51,10 +51,10 @@ ol {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin: 133px 30px;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  margin: 0px 30px;
+  width: 1140px;
+  height: 800px;
+  align-items: flex-end;
 }
 .content__accent {
   color: #545050;
@@ -148,7 +148,6 @@ ol {
   width: 399px;
   gap: 26px;
   flex-direction: column;
-  margin-bottom: 75px;
 }
 
 .content__list {
@@ -166,7 +165,7 @@ ol {
 }
 
 .content__list::-webkit-scrollbar {
-  width: 2px;
+  width: 1px;
   background-color: #f9f9fd;
 }
 
@@ -324,15 +323,6 @@ input[type="checkbox"]:checked + span {
   height: 34px;
 }
 
-.more-button {
-  /* display: flex;
-  width: 399px;
-  height: 34px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px; */
-}
-
 .search-form__submit-button {
   cursor: pointer;
   margin-top: 17px;
@@ -356,7 +346,7 @@ input[type="checkbox"]:checked + span {
 
 .content__video-card:hover {
   text-decoration: underline;
-  text-underline-position: under;
+  color: #fff;
 }
 .content__video-card:active {
   border: 1px solid #fff;
@@ -366,28 +356,3 @@ input[type="checkbox"]:checked + span {
   border: 1px solid #fff;
   background: #545050;
 }
-/* .content__video-card:has(:hover) {
-  border: 1px solid white;
-  text-decoration: underline;
-  text-underline-position: under;
-  cursor: pointer;
-}
-.content__video-card:has(:focus-visible) {
-  border: 1px solid white;
-  text-decoration: underline;
-  text-underline-position: under;
-  cursor: pointer;
-}
-
-.content__video-card:has(:active) {
-  border: 1px solid white;
-  text-decoration: underline;
-  text-underline-position: under;
-  cursor: pointer;
-}
-.content__video-card:has(:focus) {
-  border: 1px solid rgb(255, 0, 0);
-  text-decoration: underline;
-  text-underline-position: under;
-  cursor: pointer;
-} */
