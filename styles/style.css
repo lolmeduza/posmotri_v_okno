@@ -61,6 +61,7 @@ ol {
 .content__video-card-title {
   color: #fff;
   margin-left: 4px;
+  margin-top: 4px;
   font-family: "Oswald", "sans-serif";
   font-size: 30px;
   font-style: normal;
@@ -77,6 +78,7 @@ ol {
   font-weight: 400;
   line-height: 16.2px; /* 90% */
   margin-left: 4px;
+  margin-top: 4px;
 }
 .search-form__fieldset-title {
   color: #fff;
@@ -145,10 +147,15 @@ ol {
   flex-direction: column;
   height: 298px;
   position: relative;
-  gap: 29px;
   margin-bottom: 10px;
 }
+
+.content__list-item:last-child {
+  padding: 0;
+}
+
 .content__list-item {
+  padding-bottom: 30px;
   box-sizing: border-box;
 }
 
@@ -177,16 +184,16 @@ ol {
 }
 
 .result__video-container {
-  height: 400px;
+  height: 386px;
   width: 711px;
   position: relative;
+  margin-bottom: 17px;
 }
 .result__video {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
-  padding-bottom: 17px;
 }
 
 .content__video-card {
@@ -263,6 +270,10 @@ ol {
   outline: 1px solid white;
 }
 
+.search-form__textfield:active {
+  background: #1b1919;
+}
+
 .button {
   color: #fff;
   text-align: center;
@@ -285,9 +296,9 @@ ol {
   text-decoration: none;
   background: #545050;
 }
+
 .button:focus {
-  text-decoration: underline;
-  text-underline-position: under;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -305,7 +316,7 @@ ol {
   justify-items: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 225px 1fr 194px;
   gap: 40px;
 }
 
